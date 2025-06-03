@@ -1,6 +1,8 @@
 import sys
 import logging
-import src.logger
+from logger import *
+  # This ensures logger setup is loaded
+
 def error_message_detail(error, error_detail: sys):
     _, _, exc_tb = error_detail.exc_info()
     file_name = exc_tb.tb_frame.f_code.co_filename
@@ -25,8 +27,3 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error("Exception occurred", exc_info=True)
         raise CustomException(e, sys)
-try:
-    x = 1 / 0  # This causes ZeroDivisionError
-except Exception as e:
-    logging.error("Exception occurred", exc_info=True)  # This logs error with traceback
-    raise CustomException(e, sys)
