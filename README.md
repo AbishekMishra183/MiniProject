@@ -105,5 +105,5 @@ Machine Learning Models Used:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/student-performance-prediction.git
-   cd student-performance-prediction
+   git  https://github.com/AbishekMishra183/MiniProject.git
+   cd MiniProject
