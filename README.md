@@ -106,4 +106,4 @@ Machine Learning Models Used:
 1. Clone the repository:
    ```bash
    git  https://github.com/AbishekMishra183/MiniProject.git
-   cd MiniProject
+   cd  MiniProject
