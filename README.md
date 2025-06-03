@@ -29,7 +29,7 @@ The goal of this project is to predict students' final math performance (`G3`) u
 ## 📊 Dataset
 
 - **Source**: UCI Machine Learning Repository  
-- **Link**: [Student Performance Data Set](https://archive.ics.uci.edu/ml/datasets/Student+Performance)
+- **Link**: [Student Performance Data Set](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 - **Size**: 395 student records with 33 features
 - **Target Variable**: `G3` (Final Math Grade)
 
