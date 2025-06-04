@@ -1,6 +1,6 @@
 import sys
 import logging
-from logger import *
+from src.logger import *
   # This ensures logger setup is loaded
 
 def error_message_detail(error, error_detail: sys):
