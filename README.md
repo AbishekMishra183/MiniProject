@@ -33,7 +33,7 @@ The goal of this project is to predict students' final math performance (`G3`) u
 - **Size**: 395 student records with 33 features
 - **Target Variable**: `G3` (Final Math Grade)
 
-**Key Features:**
+**Key Features:** 
 - Demographic: `age`, `sex`, `address`
 - Social: `famsize`, `guardian`, `romantic`
 - Academic: `G1`, `G2`, `studytime`, `failures`, `absences`

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-dark">
+<div class="container mt-5">
+    <h2 class="mb-4">📋 Enter Student Details</h2>
+    <form action="/predictdata" method="post">
+
+        <div class="mb-3">
+            <label>Gender</label>
+            <select class="form-control" name="gender">
+                <option>male</option>
+                <option>female</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Race/Ethnicity</label>
+            <select class="form-control" name="ethnicity">
+                <option>group A</option>
+                <option>group B</option>
+                <option>group C</option>
+                <option>group D</option>
+                <option>group E</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Parental Level of Education</label>
+            <select class="form-control" name="parental_level_of_education">
+                <option>high school</option>
+                <option>some high school</option>
+                <option>associate's degree</option>
+                <option>bachelor's degree</option>
+                <option>master's degree</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Lunch Type</label>
+            <select class="form-control" name="lunch">
+                <option>standard</option>
+                <option>free/reduced</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Test Preparation Course</label>
+            <select class="form-control" name="test_preparation_course">
+                <option>none</option>
+                <option>completed</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Reading Score</label>
+            <input type="number" class="form-control" name="reading_score" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Writing Score</label>
+            <input type="number" class="form-control" name="writing_score" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">Predict</button>
+    </form>
+
+    {% if results %}
+    <div class="alert alert-info mt-4">
+        <h4>📊 Predicted Math Score: <strong>{{ results }}</strong></h4>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>

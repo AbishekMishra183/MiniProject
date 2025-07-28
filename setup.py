@@ -15,7 +15,7 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 setup(
-    name="Student Performance prediction using ml in mathematics",
+   name="student_performance_ml_math",
     version='0.0.1',
     author='Abishek',
     author_email='mishraabishek686@gmail.com',
